@@ -1,0 +1,36 @@
+{
+  "name": "pi-loop",
+  "version": "1.0.0",
+  "description": "Pi extension: /loop start <prompt> runs the prompt in a fresh session (all context cleared) after every agent run, until the agent calls quit or the user types /loop end",
+  "type": "module",
+  "keywords": [
+    "pi-coding-agent",
+    "pi-extension",
+    "loop",
+    "ralph"
+  ],
+  "author": "oinuar",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "scripts": {
+    "test": "node --test 'test/*.test.ts'",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-ai": "^0.87.1",
+    "@earendil-works/pi-coding-agent": "^0.87.1",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.7.0"
+  },
+  "files": [
+    "index.ts",
+    "README.md"
+  ]
+}
